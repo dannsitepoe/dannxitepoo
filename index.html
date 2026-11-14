@@ -1,9 +1,52 @@
-/scratch-ai-smp
-│
-├── README.md               <-- Dokumentasi & panduan mengajar/belajar
-├── /projects
-│   ├── game-deteksi-gestur.sb3  <-- File proyek Scratch
-│   └── klasifikasi-suara.sb3
-├── /docs
-│   └── panduan-guru-smp.pdf
-└── .gitignore
+# 🤖 Belajar Koding dan AI dengan Scratch (Tingkat SMP)
+
+Repositori ini berisi modul pembelajaran, contoh proyek visual, dan integrasi Artificial Intelligence (AI) menggunakan **Scratch** yang disesuaikan untuk siswa tingkat SMP/MTs (Fase D).
+
+---
+
+## 📁 Daftar Isi Proyek
+1. **Pengenalan Berpikir Komputasional & Scratch**
+2. **Proyek 1: Game Interaktif Dasar (Variabel & Kondisional)**
+3. **Proyek 2: Integrasi AI Sederhana (Teachable Machine + Scratch)**
+
+---
+
+## 🚀 Proyek Unggulan: Game Pengenal Gestur / Suara (AI + Scratch)
+
+Pada proyek ini, siswa akan membuat karakter Scratch yang bergerak atau bereaksi berdasarkan masukan kamera (webcam) atau suara yang sudah dilatih menggunakan Google Teachable Machine.
+
+### Langkah-langkah Singkat:
+1. **Latih Model AI:**
+   * Buka [Google Teachable Machine](https://withgoogle.com).
+   * Pilih *Image Project* atau *Audio Project*.
+   * Buat 2 kelas/kategori (Contoh: "Angkat Tangan" dan "Turunkan Tangan").
+   * Latih (*Train*) model dan **Ekspor Model** (ambil tautan *shareable link*).
+2. **Hubungkan ke Scratch:**
+   * Buka [Scratch 3 Online / Offline](https://mit.edu).
+   * Tambahkan ekstensi **Video Sensing** atau **Speech to Text** / integrasi pihak ketiga seperti *TM2Scratch*.
+   * Masukkan blok kode logika seperti di bawah ini:
+
+### Contoh Logika Blok Scratch (Pseudocode / Representasi Visual)
+```text
+K जब [bendera hijau] diklik
+TULIS ULANG:
+  Selamanya:
+    Jika [Model AI mendeteksi "Angkat Tangan"] maka:
+      Katakan ["Halo! Kamu mengangkat tangan!"] selama (2) detik
+      Geser ke (y: 50)
+    Jika [Model AI mendeteksi "Turunkan Tangan"] maka:
+      Katakan ["Tanganmu di bawah."] selama (2) detik
+      Geser ke (y: -50)
+```
+
+---
+
+## 🛠️ Cara Menggunakan Repositori Ini
+1. Clone atau unduh repositori ini:
+   ```bash
+   git clone https://github.com
+   ```
+2. Unduh file `.sb3` yang ada di dalam folder `/projects`.
+3. Buka situs [Scratch MIT](https://mit.edu), klik **File** -> **Load from your computer**, lalu pilih file `.sb3` tersebut.
+
+---
